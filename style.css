@@ -281,6 +281,9 @@ p.feature-paragraph
     .header-text
     {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .heading
@@ -294,6 +297,18 @@ p.feature-paragraph
         width: 100%;
         font-size: 1.3rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 400px){
+    .heading
+    {
+        margin-bottom: 100px;
+    }
+
+    .features
+    {
+        margin-top: 240px;
     }
 }
 
