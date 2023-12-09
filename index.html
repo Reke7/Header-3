@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header 3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=Lato:wght@300&family=Montserrat:wght@500&family=Righteous&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/898db5b23a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <img src="images/Image.png" alt="background" class="background-image"> -->
+
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="left-side">
+                    <h2 class="logo">Startup 3</h2>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Tour</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Prices</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">F.A.Q.</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+                    </ul>                
+                </div>
+
+
+                <button class="orderBtn">Buy $38</button>
+                
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="header-text visibility">
+            <h1 class="heading">Suit Up Your Startup</h1>
+            <h5 class="lead">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</h5>
+        </div>
+
+        <div class="features visibility">
+            <div class="feature">
+                <i class="fas fa-cogs" style="width: 60px; height: 26px; font-size: 50px; line-height: 26px; letter-spacing: 6.25px;"></i>
+                <h5 class="feature-heading">Based on Bootstrap</h5>
+                <p class="feature-paragraph">HTML layout is based on one of the most common and reliable framework - Bootstrap.</p>
+            </div>
+
+            <div class="feature visibility">
+                <i class="fa-brands fa-html5" style="width: 60px; height: 26px; font-size: 50px; line-height: 26px; letter-spacing: 6.25px;"></i>
+                <h5 class="feature-heading">HTML5 & CSS3</h5>
+                <p class="feature-paragraph">We used only time-tested technologies for the best results.</p>
+            </div>
+        </div>
+
+        <img src="images/Macbook Pro.png" alt="Macbook" class="macbook visibility">
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const navLink = document.querySelectorAll(".nav-link");
+
+        const visibility = document.querySelector(".visibility");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            visibility.classList.toggle("visibility-opacity");
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+
+        function closeMenu()
+        {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+            hero.classList.remove("visibility-opacity");
+        }
+    </script>
+</body>
+</html>
