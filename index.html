@@ -16,53 +16,55 @@
 <body>
     <!-- <img src="images/Image.png" alt="background" class="background-image"> -->
 
-    <div class="container">
-        <header>
+    <header>
+        <div class="container row">
             <nav class="navbar">
-                <div class="left-side">
+                <div class="left-nav">
                     <h2 class="logo">Startup 3</h2>
-                    <ul class="nav-menu">
+                    <ul class="nav-menu nav-menu--primary">
                         <li class="nav-item"><a href="#" class="nav-link">Tour</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Prices</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">F.A.Q.</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
-                    </ul>                
+                    </ul>
                 </div>
-
-
-                <button class="orderBtn">Buy $38</button>
-                
-
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="orderBtn">Buy $38</a></li>
+                </ul>
+            
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
             </nav>
-        </header>
-
-        <div class="header-text visibility">
-            <h1 class="heading">Suit Up Your Startup</h1>
-            <h5 class="lead">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</h5>
         </div>
+    </header>
 
-        <div class="features visibility">
-            <div class="feature">
-                <i class="fas fa-cogs" style="width: 60px; height: 26px; font-size: 50px; line-height: 26px; letter-spacing: 6.25px;"></i>
-                <h5 class="feature-heading">Based on Bootstrap</h5>
-                <p class="feature-paragraph">HTML layout is based on one of the most common and reliable framework - Bootstrap.</p>
+    <section class="hero">
+        <img src="images/Macbook Pro.png" alt="Macbook" class="macbook">
+        <div class="container">
+            <div class="header-text">
+                <h1 class="heading">Suit Up Your Startup</h1>
+                <h5 class="lead">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</h5>
             </div>
-
-            <div class="feature visibility">
-                <i class="fa-brands fa-html5" style="width: 60px; height: 26px; font-size: 50px; line-height: 26px; letter-spacing: 6.25px;"></i>
-                <h5 class="feature-heading">HTML5 & CSS3</h5>
-                <p class="feature-paragraph">We used only time-tested technologies for the best results.</p>
+        
+            <div class="features row">
+                <div class="feature">
+                    <i class="fas fa-cogs" style="width: 60px; height: 26px; font-size: 50px; line-height: 26px; letter-spacing: 6.25px;"></i>
+                    <h5 class="feature-heading">Based on Bootstrap</h5>
+                    <p class="feature-paragraph">HTML layout is based on one of the most common and reliable framework - Bootstrap.</p>
+                </div>
+        
+                <div class="feature visibility">
+                    <i class="fa-brands fa-html5" style="width: 60px; height: 26px; font-size: 50px; line-height: 26px; letter-spacing: 6.25px;"></i>
+                    <h5 class="feature-heading">HTML5 & CSS3</h5>
+                    <p class="feature-paragraph">We used only time-tested technologies for the best results.</p>
+                </div>
             </div>
         </div>
-
-        <img src="images/Macbook Pro.png" alt="Macbook" class="macbook visibility">
-    </div>
+    </section>
 
     <script>
         const hamburger = document.querySelector(".hamburger");
