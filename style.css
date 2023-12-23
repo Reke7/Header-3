@@ -266,7 +266,7 @@ nav
 {
     .header-text
     {
-        width: 90%;
+        width: 100%;
     }
     .heading
     {
@@ -274,7 +274,7 @@ nav
     }
     .lead
     {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .features
     {
